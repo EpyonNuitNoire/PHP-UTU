@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Formularios</title>
+</head>
+<body>
+    <header>
+        <h1>FORMULARIOS</h1>
+        <H2>Estructura y diseño</H2>
+    </header>
+    <section>
+        <form action="datoscliente.php">
+            <div class="form-content">
+            <fieldset>
+                <legend>Ingresar campos</legend>
+            <div class="campos">
+                <label for="name">Nombre: </label>
+                <input type="text" name="nombre" id="name" placeholder="Ingresar un nombre" required title="Debe ingresar un  nombre">
+            </div>
+            <div class="campos">
+                <label for="lastname">Apellido: </label>
+                <input type="text" name="apellido" id="lastname" required>
+            </div>
+            <div class="campos">
+                <label for="mail">Mail: </label>
+                <input type="email" name="mail" id="mail">
+            </div>
+            <div>
+                <strong>Turnos de trabajo</strong><br>
+                
+                <input type="radio" name="turno" id="matutino" checked>
+                <label for="matutino">Turno matutino</label><br>
+                
+                <input type="radio" name="turno" id="vespertino">
+                <label for="vespertino">Turno vespertino</label><br>
+
+                <input type="radio" name="turno" id="nocturno">
+                <label for="nocturno">Turno nocturno</label>
+                
+            </div>
+
+            <div>
+                <input type="file">  
+            <div>
+                <label for="mensaje">Mensaje:</label>
+                <textarea name="mensaje" id="mensaje" cols="60" rows="10"></textarea>
+            </div>
+            <div id="enviar" class="campos">
+                <input type="submit" value="Enviar">
+            </div>
+            </fieldset>
+            
+        </div>
+            
+
+        </form>
+    </section>
+</body>
+</html>
